@@ -1,0 +1,4 @@
+.env
+.idea
+terraform_s3/usage
+node_modules
