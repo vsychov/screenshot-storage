@@ -13,6 +13,6 @@
 - Run `aws configure --profile flameshot-upload` use terraform module to configure bucket
 - You may need to `chmod +x flameshot-s3.sh`
 - Add to /usr/local/bin `sudo cp flameshot-s3.sh /usr/local/bin/flameshots3`
-- Optionally assign `flameshots3` to keyboard shortcut
+- Optionally assign `flameshots3` to keyboard shortcut (e.g. by https://github.com/deseven/iCanHazShortcut)
 
 Based on https://github.com/notmeta/flameshot-s3-uploader
