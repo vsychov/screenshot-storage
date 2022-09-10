@@ -6,12 +6,15 @@ temp_file="/tmp/screenshot.png"
 
 rand_file_name=$(openssl rand -hex 6)
 prefix=$(date +'%Y/%m/%d')
-full_object_name="$prefix/$rand_file_name.png"
+full_object_name="$prefix/$rand_file_name.webp"
 
 # Run flameshot --help for options
 /Applications/flameshot.app/Contents/MacOS/flameshot gui -r > $temp_file
 
-if [[ $(file --mime-type -b $temp_file) != "image/png" ]]; then
+#convert to webp image
+cwebp -q 100 $temp_file -o $temp_file
+
+if [[ $(file --mime-type -b $temp_file) != "image/webp" ]]; then
   rm $temp_file
   /usr/local/bin/terminal-notifier -title "Flameshot S3" -message "Screenshot aborted" && exit 0
 fi

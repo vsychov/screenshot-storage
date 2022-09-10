@@ -1,0 +1,10 @@
+name = "worker-name"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[vars]
+S3_BUCKET_PREFIX = "https://s3.eu-west-1.amazonaws.com/my-bucket-name"

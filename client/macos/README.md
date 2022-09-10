@@ -4,6 +4,7 @@
 - aws-cli
 - openssl
 - terminal-notifier
+- `cwebp` - https://developers.google.com/speed/webp/docs/using
 
 - ## Setup:
 - install terminal-notifier by `brew install terminal-notifier`
